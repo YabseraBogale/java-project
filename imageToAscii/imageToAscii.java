@@ -8,7 +8,7 @@ public class imageToAscii{
         var bufferimage=ImageIO.read(wall);
         for(int i=0;i<bufferimage.getWidth();i++){
             for(int j=0;j<bufferimage.getHeight();j++){
-                System.err.println(bufferimage.getRGB(j, i));
+                System.err.println((byte)bufferimage.getRGB(i, j)*-1);
             }
         }
         } catch(IOException e ){
