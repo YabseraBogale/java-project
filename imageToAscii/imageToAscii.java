@@ -8,13 +8,11 @@ public class imageToAscii{
         var bufferimage=ImageIO.read(wall);
         for(int i=0;i<bufferimage.getWidth();i++){
             for(int j=0;j<bufferimage.getHeight();j++){
-                System.err.println((byte)bufferimage.getRGB(i, j)*-1);
+                System.err.println(bufferimage.getRGB(i, j));
             }
         }
         } catch(IOException e ){
             System.err.println(e.getMessage());
-        } catch(ArrayIndexOutOfBoundsException e){
-            System.err.println(e.getMessage());
-        }
+        } 
     }
 }
