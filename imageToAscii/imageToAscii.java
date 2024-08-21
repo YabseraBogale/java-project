@@ -6,7 +6,7 @@ public class imageToAscii{
         try{
         var wall=new File("./wall.png");
         var bufferimage=ImageIO.read(wall);
-        System.err.println(bufferimage);
+        System.err.println(bufferimage.getRGB(0, 0));
         } catch(IOException e){
             System.err.println(e.getMessage());
         }
